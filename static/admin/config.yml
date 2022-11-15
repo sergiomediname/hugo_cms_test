@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+logo_url: https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png,
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
