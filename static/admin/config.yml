@@ -12,7 +12,7 @@ collections:
     editor:
       preview: false
     files:
-      - file: "content/data/site-settings.yml"
+      - file: "content/data/siteSettings.yml"
         label: "Ajustes generales"
         name: "globalSettings"
         fields:
