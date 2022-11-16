@@ -7,6 +7,19 @@ locale: 'es'
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
+  - name: "settings"
+    label: "Ajustes"
+    editor:
+      preview: false
+    files:
+      - file: "content/data/site-settings.yml"
+        label: "Ajustes generales"
+        name: "globalSettings"
+        fields:
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Descripción", name: "description", widget: "text"}
+          - {label: "Teléfono", name: "phone", widget: "text"}
+          - {label: "Email", name: "mailto", widget: "text"}
   - name: "posts" # Used in routes, e.g., /admin/collections/post
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
