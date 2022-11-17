@@ -25,12 +25,17 @@
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
-
+	
+	<style>
+		:root {
+			--main-color: {{ .Site.Data.colors.main_color }};
+			--second-color: {{ .Site.Data.colors.second_color }};
+			--body-color: {{ .Site.Data.colors.body_color }};
+		}
+	</style>
 </head>
 
 <body>
-
-<h2>{{ .Site.Data.settings.description }}</h2>
 
 {{ partial "nav.html" . }}
 

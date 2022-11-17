@@ -1,14 +1,16 @@
 /* LAYOUT */
 
 body {
-  color: #333;
+  color: var(--body-color);
   font-size: 125%;
   line-height: 1.5;
   max-width: 45rem;
   padding: 1rem;
   margin: 0 auto;
 }
-
+a, a:hover {
+  color: var(--main-color);
+}
 .post-title {
   margin-bottom: 1rem;
 }
