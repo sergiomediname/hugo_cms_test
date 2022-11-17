@@ -5,5 +5,5 @@ section:
   heading: A Subsection
   text: You can put even more content in here.
 seo:
-  title_seo: ""
+  title_seo: 🚀 Despega tu【 CTR 】- 100 EMOJIS para MÁS CLICKS ! 🔥
 ---
