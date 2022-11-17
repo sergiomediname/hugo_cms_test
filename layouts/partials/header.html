@@ -40,3 +40,6 @@
 {{ partial "nav.html" . }}
 
 <main class="content">
+	{{ if isset .Params.seo "title_seo" }}
+		<h4>{{ index .Params.seo "title_seo" }}</h4>
+	{{ end }}
