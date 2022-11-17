@@ -1,9 +1,9 @@
 ---
 title: Hi There
-blurb: Welcome to your new Hugo site.
+blurb: Welcome to your new Hugo site
 section:
   heading: A Subsection
   text: You can put even more content in here.
 seo:
-  title_seo: 🚀 Despega tu【 CTR 】- 100 EMOJIS para MÁS CLICKS ! 🔥
+  title_seo: ""
 ---
