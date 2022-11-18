@@ -34,9 +34,9 @@
 
 
 	<!-- Title -->
-	<meta content='{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}' property='og:title'/>
-	<meta content='{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}' property='twitter:title'/>
-	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+	<meta content='{{ if .Params.seo.title_seo }}{{ .Params.seo.title_seo }}{{ else }}{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}{{ end }}' property='og:title'/>
+	<meta content='{{ if .Params.seo.title_seo }}{{ .Params.seo.title_seo }}{{ else }}{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}{{ end }}' property='twitter:title'/>
+	<title>{{ if .Params.seo.title_seo }}{{ .Params.seo.title_seo }}{{ else }}{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
 	<!-- Style -->
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
@@ -58,20 +58,6 @@
 <body>
 
 {{ partial "nav.html" . }}
-
-<div style="color: red;">
-{{ if .Params.seo.title_seo }}
-	<span style="color: blue;">titulo seo</span>
-	{{ .Params.seo.title_seo }}
-{{ else }}
-	<span style="color: blue;">titulo normal</span>
-	{{ if not .IsHome }}
-		{{ .Title }} |
-	{{ end }}
-	{{ .Site.Title }}
-{{ end }}
-
-</div>
 
 <main class="content">
 	{{ if .Params.seo.title_seo }}
