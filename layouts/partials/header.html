@@ -5,9 +5,29 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<meta content="{{ if .IsHome }}website{{ else }}article{{ end }}" property="og:type"/>
+
+	<!-- App name -->
+	<meta content="{{ .Site.Data.settings.title }}" name="application-name"/>
+	<meta content="{{ .Site.Data.settings.title }}" property="og:site_name"/>
+
+	<!-- Meta referrer tag -->
+	<meta content='unsafe-url' name='referrer'/>
+
+	<!-- Type of Twitter card -->
+	<meta content='summary_large_image' name='twitter:card'/>
+
+	<!-- Favicon -->
+	<link href='{{ .Site.Data.settings.favicon }}' rel='icon' type='image/x-icon'/>
+
+	<!-- URL canonical -->
+	<meta content="{{ .Permalink }}" property='og:url'/>
+	<link href="{{ .Permalink }}" rel='canonical'/>
+
+
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-	<meta name="description" content="{{ .Site.Data.settings.description }}" />
-	<!-- <meta name="robots" content="max-image-preview:large" /> -->
+	<!-- <meta name="description" content="{{ .Site.Data.settings.description }}" />
+	<meta name="robots" content="max-image-preview:large" />
 	<link rel="canonical" href="https://www.buscatucoche.com/" />
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:site_name" content="Buscatucoche | Coches de ocasión y KM0" />
@@ -17,7 +37,7 @@
 	<meta property="og:url" content="https://www.buscatucoche.com/" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="{{ .Site.Data.settings.title }}" />
-	<meta name="twitter:description" content="{{ .Site.Data.settings.description }}" />
+	<meta name="twitter:description" content="{{ .Site.Data.settings.description }}" /> -->
 
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
