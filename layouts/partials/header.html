@@ -61,8 +61,10 @@
 
 <div style="color: red;">
 {{ if .Params.seo.title_seo }}
+	<span style="color: blue;">titulo seo</span>
 	{{ .Params.seo.title_seo }}
 {{ else }}
+	<span style="color: blue;">titulo normal</span>
 	{{ if not .IsHome }}
 		{{ .Title }} |
 	{{ end }}
