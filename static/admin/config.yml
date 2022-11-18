@@ -45,7 +45,7 @@ collections:
           [
             { label: "Título", name: "title_seo", widget: "string", required: false },
             { label: "Descripción", name: "description_seo", widget: "text", required: false },
-            { label: "Enlace permanente", name: "slug", widget: "string", required: false },
+            { label: "Enlace permanente", name: "permalink_seo", widget: "string", required: false },
             { label: "Imagen destacada", name: "featured_image_seo", widget: "image", required: false }
           ],
         }
