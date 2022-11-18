@@ -1,11 +1,14 @@
 ---
 title: Testing testing
+slug: asdasd
 date: 2022-11-15T09:59:35.886Z
 image: triocar.png
 featured_image:
   src: triocar.png
   alt: esto es el alt
   title: esto es el title
+seo:
+  title_seo: asdasdasd
 ---
 ## Este es mi primera publicación
 
