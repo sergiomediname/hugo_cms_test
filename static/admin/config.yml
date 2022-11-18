@@ -41,13 +41,13 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Featured Image"
-        name: "featured_image"
-        widget: "object"
-        fields:
-          - {name: src, label: Image, widget: image}
-          - {name: alt, label: Alt text, widget: string}
-          - {name: title, label: Title, widget: string}
+      - { label: "Ajustes SEO", name: "seo", widget: "object", fields:
+          [
+            { label: "Título", name: "title_seo", widget: "string", required: false },
+            { label: "Descripción", name: "description_seo", widget: "text", required: false },
+            { label: "Imagen destacada", name: "featured_image_seo", widget: "image", required: false }
+          ],
+        }
   - name: "pages"
     label: "Pages"
     files:
@@ -57,15 +57,12 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Blurb", name: "blurb", widget: "text" }
-          - {
-              label: "Ajustes SEO",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "Título", name: "title_seo", widget: "string", required: false },
-                  { label: "Descripción", name: "description_seo", widget: "text", required: false },
-                ],
+          - { label: "Ajustes SEO", name: "seo", widget: "object", fields:
+              [
+                { label: "Título", name: "title_seo", widget: "string", required: false },
+                { label: "Descripción", name: "description_seo", widget: "text", required: false },
+                { label: "Imagen destacada", name: "featured_image_seo", widget: "image", required: false }
+              ],
             }
       - file: "content/about/index.md"
         label: "About"
