@@ -6,4 +6,5 @@ section:
   text: You can put even more content in here.
 seo:
   title_seo: ""
+  description_seo: descripcion seo
 ---
