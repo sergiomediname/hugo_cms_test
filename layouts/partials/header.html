@@ -57,6 +57,7 @@
 			--body-color: {{ .Site.Data.colors.body_color }};
 		}
 	</style>
+	
 </head>
 
 <body>
@@ -64,6 +65,3 @@
 {{ partial "nav.html" . }}
 
 <main class="content">
-	{{ if .Params.seo.title_seo }}
-		<h4>{{ .Params.seo.title_seo }}</h4>
-	{{ end }}
