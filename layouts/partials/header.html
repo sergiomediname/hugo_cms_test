@@ -58,7 +58,8 @@
 <body>
 
 {{ partial "nav.html" . }}
-
+<p>Canonical: {{ .Params.canonicalUrl }}</p>
+<p>Permalink: {{ .Permalink }}</p>
 <main class="content">
 	{{ if .Params.seo.title_seo }}
 		<h4>{{ .Params.seo.title_seo }}</h4>
