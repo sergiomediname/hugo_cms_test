@@ -5,6 +5,6 @@ section:
   heading: A Subsection
   text: You can put even more content in here.
 seo:
-  title_seo: ""
+  title_seo: esto es min tutlo seo
   description_seo: descripcion seo
 ---
