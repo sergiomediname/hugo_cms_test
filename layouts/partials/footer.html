@@ -1,0 +1,24 @@
+</main>
+	
+<footer>
+	<p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+</footer>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+  import CMS from 'netlify-cms-app';
+import { es } from 'netlify-cms-locales';
+
+CMS.registerLocale('es', es);
+</script>
+
+</body>
+</html>
