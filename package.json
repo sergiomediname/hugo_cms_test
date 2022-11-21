@@ -1,0 +1,41 @@
+{
+  "name": "enter",
+  "version": "1.0.0",
+  "description": "Dead-simple Hugo theme with Netlify CMS integration. Intended to be a starter for creating your own theme with an out-of-the-box Netlify CMS integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp --development --template",
+    "build": "gulp build --production --template"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiomediname/hugo_cms_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiomediname/hugo_cms_test/issues"
+  },
+  "homepage": "https://github.com/sergiomediname/hugo_cms_test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-mode": "^1.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.19",
+    "sass": "^1.56.1",
+    "tailwindcss": "^3.2.4",
+    "yargs": "^17.6.2"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  }
+}
