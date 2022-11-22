@@ -1,3 +1,7 @@
+testest: |-2
+    <script>
+        console.log("body");
+    </script>
 before_head_close: |-2
     <script>
         console.log("body");
