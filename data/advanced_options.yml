@@ -1,0 +1,10 @@
+before_head_close:
+  code: |-
+    <script>
+        console.log("head");
+    </script>
+before_body_close:
+  code: |-
+    <script>
+        console.log("body");
+    </script>
