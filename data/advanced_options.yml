@@ -1,8 +1,8 @@
-before_head_close: |-
+before_head_close:
   <script>
       console.log("head");
   </script>
-before_body_close: |-
+before_body_close:
   <script>
       console.log("body");
   </script>
