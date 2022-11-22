@@ -29,13 +29,6 @@ collections:
           - {label: "Color principal", name: "main_color", widget: "color"}
           - {label: "Color secundario", name: "second_color", widget: "color"}
           - {label: "Color de textos", name: "body_color", widget: "color"}
-      - file: "data/advanced_options.yml"
-        label: "Opciones avanzadas"
-        name: "advanced_options"
-        fields:
-          - {label: "Test", name: "testest", widget: "markdown"}
-          - {label: "Código antes de </head>", name: "before_head_close", widget: "text"}
-          - {label: "Código antes de </body>", name: "before_body_close", widget: "text"}
   - name: "posts" # Used in routes, e.g., /admin/collections/post
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
