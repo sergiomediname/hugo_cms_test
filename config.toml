@@ -1,6 +1,6 @@
 baseURL = "https://test-hugo-cms.netlify.app/"
 title = "My New Hugo Site"
-theme = "Etch"
+theme = "etch"
 [menu]
   [[menu.main]]
     identifier = "posts"
